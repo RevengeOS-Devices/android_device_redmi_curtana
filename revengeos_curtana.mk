@@ -7,11 +7,15 @@
 # Inherit from curtana device
 $(call inherit-product, device/redmi/curtana/device.mk)
 
-# Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common RevengeOS stuff.
+$(call inherit-product, vendor/revengeos/config/common.mk)
+
+IS_PHONE := true
+TARGET_BOOT_ANIMATION_RES := 1080
+REVENGEOS_BUILDTYPE := OFFICIAL
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := lineage_curtana
+PRODUCT_NAME := revengeos_curtana
 PRODUCT_DEVICE := curtana
 PRODUCT_BRAND := Redmi
 PRODUCT_MANUFACTURER := Xiaomi
