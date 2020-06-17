@@ -6,9 +6,6 @@
 
 DEVICE_PATH := device/redmi/curtana
 
-# Inherit from sm6250-common
--include device/redmi/sm6250-common/BoardConfigCommon.mk
-
 # Assert
 TARGET_OTA_ASSERT_DEVICE := curtana
 
@@ -21,3 +18,6 @@ TARGET_RECOVERY_DEVICE_MODULES := libinit_curtana
 
 # Kernel
 TARGET_KERNEL_CONFIG := vendor/curtana_defconfig
+
+# Inherit from sm6250-common
+-include device/redmi/sm6250-common/BoardConfigCommon.mk
