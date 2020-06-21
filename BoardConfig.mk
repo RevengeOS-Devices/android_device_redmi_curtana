@@ -17,7 +17,7 @@ TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_curtana
 TARGET_RECOVERY_DEVICE_MODULES := libinit_curtana
 
 # Kernel
-TARGET_KERNEL_CONFIG := vendor/curtana_defconfig
+TARGET_KERNEL_CONFIG := vendor/curtana-inline_defconfig
 
 # Inherit from sm6250-common
 -include device/redmi/sm6250-common/BoardConfigCommon.mk
